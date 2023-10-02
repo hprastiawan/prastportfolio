@@ -82,7 +82,6 @@ function toggleContent(elementId) {
     }
 }
 
-
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('#techlearning-header').addEventListener('click', function() {
         toggleContent('techlearning-content');
@@ -91,5 +90,20 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('#otto-header').addEventListener('click', function() {
         toggleContent('otto-content');
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('#atic-header').addEventListener('click', function() {
+        toggleContent('atic-content');
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('#dwidasa-header').addEventListener('click', function() {
+        toggleContent('dwidasa-content');
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('#mercu-header').addEventListener('click', function() {
+        toggleContent('mercu-content');
     });
 });
