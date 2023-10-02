@@ -7,6 +7,8 @@ import { htmlParser } from './html-parser.js';
  * @param {object} options options object
  * @returns {object} a new Typed object
  */
+
+
 export default class Typed {
   constructor(elementId, options) {
     // Initialize it up
@@ -87,7 +89,7 @@ export default class Typed {
    * @private
    */
   begin() {
-    this.options.onBegin(this);
+    // this.options.onBegin(this);
     this.typingComplete = false;
     this.shuffleStringsIfNeeded(this);
     this.insertCursor();
@@ -95,11 +97,11 @@ export default class Typed {
     this.timeout = setTimeout(() => {
       // If the strPos is 0, we're starting from the beginning of a string
       // else, we're starting with a previous string that needs to be backspaced first
-      if (this.strPos === 0) {
-        this.typewrite(this.strings[this.sequence[this.arrayPos]], this.strPos);
-      } else {
-        this.backspace(this.strings[this.sequence[this.arrayPos]], this.strPos);
-      }
+      // if (this.strPos === 0) {
+      //   this.typewrite(this.strings[this.sequence[this.arrayPos]], this.strPos);
+      // } else {
+      //   this.backspace(this.strings[this.sequence[this.arrayPos]], this.strPos);
+      // }
     }, this.startDelay);
   }
 
@@ -431,3 +433,4 @@ export default class Typed {
       this.el.parentNode.insertBefore(this.cursor, this.el.nextSibling);
   }
 }
+

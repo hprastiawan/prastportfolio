@@ -61,4 +61,35 @@ document.addEventListener('DOMContentLoaded', function() {
         loop: true
     });
 });
-        
+
+document.addEventListener("DOMContentLoaded", function() {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+            document.getElementById('bukalapak-content').innerHTML = this.responseText;
+        }
+    };
+    xhr.open("GET", "templates/bukalapak.html", true);
+    xhr.send();
+});
+
+function toggleContent(elementId) {
+    var content = document.getElementById(elementId);
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('#techlearning-header').addEventListener('click', function() {
+        toggleContent('techlearning-content');
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('#otto-header').addEventListener('click', function() {
+        toggleContent('otto-content');
+    });
+});

@@ -35,9 +35,6 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    
-    <script src="js/typed.js" defer></script>
-    <script src="js/script.js" defer></script>
 </head>
 
 
@@ -290,26 +287,149 @@
     </section>
 
     <!-- Work Experience Section -->
-    <section class="skills section" id="skills">
-        <h2 class="heading">Skills</h2>
-        <div class="skills__data">
-            <div class="skills__names" onclick="toggleExpandCollapse('additional-content1')">
-                <i class='bx bx-paper-plane skills__icon'></i>
-                <span class="skills__name">Product Management</span>
+    <section class="we section" id="skills">
+        <h2 class="heading">Work <span>Experience</span></h2>
+        <!-- 1. Sr. Manager Technology Administration, Tech Initiative Support, and Learning Operation  -->
+        <div class="toggle-container">
+            <div class="toggle-header" style="position: relative;">
+                <div style="max-width: 40%; color:white; display: inline-block; vertical-align: middle;">
+                    Sr. Manager Technology Administration, Tech Initiative Support, and Learning Operation
+                </div>
+                <a href="https://www.bukalapak.com" target="_blank" style="text-decoration:none; position: absolute; left: 50%; transform: translateX(-50%); vertical-align: middle;">
+                    <span style="color:#ebf649;">Bukalapak</span>
+                </a>
+                <div class="date" style="text-align: right; display: inline-block; vertical-align: middle;">Feb 2023 - Present</div>
             </div>
-            <div class="skills__bar skills__prodman"></div>
-            <div>
-                <span class="skills__percentage">85%</span>
+            <!-- <div class="toggle-header">
+                <span style="color:white">Sr. Manager Technology Administration, Tech Initiative Support, and Learning Operation |
+                        Bukalapak</span>
+                <span class="date">Feb 2023 - Present</span>
+            </div> -->
+            <div id="bukalapak-content"></div>
+        </div>
+        <!-- 2. Senior Technology Learning Manager  -->
+        <div class="toggle-container">
+            <div class="toggle-header" id="techlearning-header" style="position: relative;">
+                <span style="color:white">Senior Technology Learning Manager</span>
+                <a href="https://www.bukalapak.com" target="_blank" style="text-decoration:none; position: absolute; left: 50%; transform: translateX(-50%);">
+                    <span style="color:#ebf649;">Bukalapak</span>
+                </a>
+                <span class="date" style="display: block; text-align: right;">Nov 2021-Jan 2023</span>
             </div>
-            <div id="additional-content1" class="additional-content">
-                <p>Your additional content for Product Management here...</p>
+            <div id="techlearning-content" class="toggle-body">
+                <p><b style="color: #ebf649; font-weight: bold;">Key Achievements:</b></p>
+                <ul style="padding-left: 40px; font-size: 9px; line-height: 2;">
+                    <li>
+                        <strong style="color:#ebf649;">Mastered</strong> the rollout of comprehensive training/onboarding using internal engineering training materials, consisting of:
+                        <ul style="padding-left:20px;">
+                            <li><strong style="color:#ebf649;">Reworked</strong> and delivered 7 onboarding materials 
+                                for diverse stacks and non-product engineers.</li>
+                            <li><strong style="color:#ebf649;">Completed</strong> the delivery of 6 Advanced Fullstack 
+                                Modules for Fullstack Training Programs.</li>
+                            <li><strong style="color:#ebf649;">Completed</strong> a 60% completion rate for the Fullstack Training Program 
+                                strategy with workshops, calendars, and weekly exams.</li>
+                            <li><strong style="color:#ebf649;">Successfully enrolled</strong> a monthly training/sharing sessions to promote 
+                                awareness/knowledge of Buka 2.0 implementation.</li>
+                        </ul>
+                    </li>
+                    <li><strong style="color:#ebf649;">Successfully initiated</strong> the Buka Tech Conversation (BTC) monthly 
+                        from October 2022 in Technology Functions, resulting in 50% of tribes participating as BTC contributor speakers 
+                        & topics and consistently attracting over 200 engineers to join BTC every month.</li>
+                    <li><strong style="color:#ebf649;">Achieved</strong> a 20% reduction in Tech Costs by minimizing the use of third-party 
+                        tech learning tools.</li>
+                </ul>                
+                <br>
+                <p><b style="color: #ebf649; font-weight: bold; line-height: 2;">Core Responsibilities:</b></p>
+                <ul style="padding-left: 40px; font-size: 9px; line-height: 2;">
+                    <li><strong style="color:#ebf649;">Successfully</strong> roll out and monitor the journey of engineers in
+                        the Technology Fullstack Acceleration Program (TFAP).</li>
+                    <li><strong style="color:#ebf649;">Launched</strong> a One Stop Training/Learning Solution in the Technology team.</li>
+                    <li><strong style="color:#ebf649;">Delivered</strong> 15 entry-level and 10 mid-level engineering training materials
+                        for Self-Paced Learning.</li>
+                    <li><strong style="color:#ebf649;">Developed</strong> a bootcamp program for onboarding new junior engineers.</li>
+                    <li><strong style="color:#ebf649;">Launched</strong> a learning path for 5 competency roles.</li>
+                    <li><strong style="color:#ebf649;">Developed</strong> the upskills program across Product Engineering, Infra, Data, and AI, resulting:</li>
+                    <ul style="padding-left:20px;">
+                            <li>3 offline engineer talks for external participants.</li>
+                            <li>15 medium blog posts from the Tech Team.</li>
+                            <li>20 Sharing Sessions across tribes and divisions, including socialization events.</li>
+                            <li>60 engineers for English Class.</li>
+                    </ul>
+                    <li><strong style="color:#ebf649;">Developed</strong> two-course programs for Secured Code Warrior (SCW) for engineers
+                        and created assessments for SCW users across various domains.</li>
+                </ul>
             </div>
-        </div>        
+        </div>
+        <!-- 3. Product Manager Lead | OTTODIGITAL  -->
+        <div class="toggle-container">
+            <div class="toggle-header" id="otto-header" style="position: relative;">
+                <span style="color:white">Product Manager Lead</span>
+                <a href="https://ottodigital.id/" target="_blank" style="text-decoration:none; position: absolute; left: 50%; transform: translateX(-50%);">
+                    <span style="color:#ebf649;">OttoDigital Group</span>
+                </a>
+                <span class="date" style="display: block; text-align: right;">Jun 2021-Oct 2021</span>
+            </div>
+            <div id="otto-content" class="toggle-body">
+                <p><b style="color: #ebf649; font-weight: bold;">Key Achievements:</b></p>
+                <ul style="padding-left: 40px; font-size: 9px; line-height: 2;">
+                    <li>
+                        <strong><a href="https://ottocash.id/" style="color:#ebf649; text-decoration: none;">OttoCash:</a></strong>
+                        <ul style="padding-left:20px;">
+                            <li><strong style="color:#ebf649;">Successfully</strong> integrated advanced QRIS functionalities such as 
+                                Scan, TTM, TTS, and X-border.</li>
+                            <li><strong style="color:#ebf649;">Successfully</strong> led the implementation of innovative features like 
+                                Token Payment and Cardless Withdrawal BCA.</li>
+                            <li><strong style="color:#ebf649;">Delivered</strong> a comprehensive biller system and achieved seamless 
+                                integration of QRIS MPM for P2P partner, Indodana.</li>
+                            <li><strong style="color:#ebf649;">Successfully</strong> executed bridging token payment solutions for 
+                                renowned retail chains Alfamart & Indomaret.</li>
+                            <li><strong style="color:#ebf649;">Successfully</strong> implemented the industry standards by enhancing 
+                                the Optima dashboard, covering Transfer, CWD, QRIS, and Biller functionalities.</li>
+                            <li><strong style="color:#ebf649;">Accomplished</strong> the integration of OttoMart with OttoGrosir Webview and 
+                                developed specialized modules for BCA CWD partners.</li>
+                            <li><strong style="color:#ebf649;">Achieved</strong> the implementation of the offering of diverse biller 
+                                services through the OttoCash App, covering telecom, utilities, and other sectors.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong><a href="https://indosatooredoo.com/portal/id/psdcimkaslanding" style="color:#ebf649; text-decoration: none;">IMkas:</a></strong></li>
+                        <ul style="padding-left:20px;">
+                            <li><strong style="color:#ebf649;">Attained</strong> a robust API system for disbursement partners and top-up deposit functionalities.</li>
+                            <li><strong style="color:#ebf649;">Achieved</strong> BI Compliance, securing operational permissions for the application.</li>
+                            <li><strong style="color:#ebf649;">Launched</strong> the IMkas SDK, setting a new benchmark in fintech solutions.</li>
+                            <li><strong style="color:#ebf649;">Conquered</strong> the market with strategic integrations, including platforms like Funzi, MyCashBack, iSimple, and SnapChat.</li>
+                            <li><strong style="color:#ebf649;">Fulfilled</strong> the market's demand by launching the Promo Engine, QRIS Feature, and other standout features.</li>
+                        </ul>
+                    <li><strong style="color:#ebf649;">Led</strong> two high-performing product teams, each comprising 5 members, 
+                        from the Payment and Lending Tribes, showcasing unparalleled leadership and team management skills.</li>
+                </ul>                
+                <br>
+                <p><b style="color: #ebf649; font-weight: bold; line-height: 2;">Core Responsibilities:</b></p>
+                <ul style="padding-left: 40px; font-size: 9px; line-height: 2;">
+                    <li><strong style="color:#ebf649;">Defined</strong> and communicated the product strategy and vision in alignment with the company's goals and objectives.</li>
+                    <li><strong style="color:#ebf649;">Identified</strong> market opportunities and defined product vision and strategy in collaboration with stakeholders and teams.</li>
+                    <li><strong style="color:#ebf649;">Led</strong>, mentored, and guided a team of product managers, ensuring they have the resources and support needed to succeed.</li>
+                    <li><strong style="color:#ebf649;">Fostered</strong> a collaborative culture, ensuring seamless communication between product, engineering, marketing, and sales teams.</li>
+                    <li><strong style="color:#ebf649;">Oversaw</strong> the entire product lifecycle, from ideation to launch, and post-launch performance analysis.</li>
+                    <li><strong style="color:#ebf649;">Prioritized</strong> product features and enhancements based on business impact, customer feedback, and market trends.</li>
+                    <li><strong style="color:#ebf649;">Collaborated</strong> with cross-functional teams, including engineering, marketing, sales, and customer support, to ensure product alignment.</li>
+                    <li><strong style="color:#ebf649;">Engaged</strong> with external stakeholders, partners, and customers to gather feedback and insights.</li>
+                    <li><strong style="color:#ebf649;">Conducted</strong> competitive analysis to identify market trends, threats, and opportunities.</li>
+                    <li><strong style="color:#ebf649;">Stayed</strong> updated with the latest fintech trends, technologies, and regulatory changes.</li>
+                    <li><strong style="color:#ebf649;">Defined</strong>, monitored, and analyzed product KPIs to ensure continuous improvement and growth.</li>
+                    <li><strong style="color:#ebf649;">Made</strong> data-driven decisions to enhance product features and user experience.</li>
+                    <li><strong style="color:#ebf649;">Advocated</strong> for the customer, ensuring that the products developed meet and exceed customer expectations.</li>
+                    <li><strong style="color:#ebf649;">Addressed</strong> customer feedback and concerns, ensuring high customer satisfaction.</li>
+                    <li><strong style="color:#ebf649;">Identified</strong> potential risks in product development and created strategies to mitigate them.</li>
+                    <li><strong style="color:#ebf649;">Ensured</strong> compliance with fintech regulations and standards.</li>
+                    <li><strong style="color:#ebf649;">Oversaw</strong> the product budget, ensuring optimal allocation of resources for maximum ROI.</li>
+                </ul>
+            </div>
+        </div>
     </section>
     
-
     <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
+    <!-- <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
 
         <div class="portfolio-container">
@@ -367,7 +487,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
      <!-- services section design -->
      <section class="services" id="services">
@@ -438,7 +558,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- custom js -->
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
     <script type="module">
         document.addEventListener('DOMContentLoaded', function() {
             const typed = new Typed('.multiple-text', {
@@ -452,5 +572,6 @@
     </script>
     <script type='module' src="js/typed.js"></script>
     <script type='module' src="js/script.js"></script>
+    <script src="js/toggleexpand.js"></script>
 </body>
 </html>
